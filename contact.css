@@ -1,0 +1,195 @@
+/* === Contact Page Content Styling === */
+.container.content {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 300px); /* Adjust based on your header/footer height */
+}
+
+/* Headline Styling */
+.headline h1 {
+    color: #b30000;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+
+.headline h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #b30000;
+}
+
+/* Contact Form Styling */
+.sky-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.sky-form fieldset {
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.sky-form .label {
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 15px;
+}
+
+.sky-form .input,
+.sky-form .textarea {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sky-form .input i,
+.sky-form .textarea i {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: #b30000;
+    font-size: 16px;
+}
+
+.sky-form input,
+.sky-form textarea {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.sky-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.sky-form input:focus,
+.sky-form textarea:focus {
+    border-color: #b30000;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* Fixed Send Message Button */
+.sky-form .btn-u {
+    background: #b30000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+}
+
+.sky-form .btn-u:hover {
+    background: #990000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Success Message */
+.successBox {
+    display: none;
+    background: #dff0d8;
+    border: 1px solid #d0e9c6;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.successBox .close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Contact Info Sidebar */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-unstyled li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 15px;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+.list-unstyled i {
+    color: #b30000;
+    width: 25px;
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .container.content {
+        padding: 40px 0;
+    }
+    
+    .col-md-9, .col-md-3 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .headline h2 {
+        font-size: 24px;
+    }
+    
+    .sky-form {
+        padding: 20px;
+    }
+    
+    .sky-form input,
+    .sky-form textarea {
+        padding: 10px 15px 10px 35px;
+    }
+    
+    .sky-form .input i,
+    .sky-form .textarea i {
+        font-size: 14px;
+        top: 10px;
+    }
+}
+
+.list-unstyled link-list{
+    color: white;
+}
+

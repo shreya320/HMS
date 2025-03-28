@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGRR Hospital | Registration</title>
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/line-icons-pro/styles.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--=== Header v1 ===-->
+    <div class="header-v1">
+        <!-- Topbar -->
+        <div class="topbar-v1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline top-v1-contacts">
+                            <li><i class="fa fa-envelope"></i> Email: sgrrhms@gmail.com</li>
+                            <li><i class="fa fa-phone"></i> Contact no: 6396276055</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container">
+                <div class="res-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="download.png" height="50" width="50" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <div class="res-container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="doctors.html">DOCTORS</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="registration.html">REGISTRATION</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li><a href="appointment.html">BOOK APPOINTMENT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>REGISTER</h2>
+    </div>
+
+    <!-- Registration Form -->
+    <form id="registration-form" method="post" action="register.php" class="reg-page">
+        <div class="reg-header">
+            <h2>Register a new account</h2>
+            <p>Already Signed Up? Click <a href="login.html" class="color-green">Sign In</a> to log in to your account.</p>
+        </div>
+    
+        <label>First Name</label>
+        <input type="text" name="first_name" class="form-control" required>
+    
+        <label>Last Name</label>
+        <input type="text" name="last_name" class="form-control" required>
+    
+        <label>Email Address <span class="color-red">*</span></label>
+        <input type="email" name="email" class="form-control" required>
+    
+        <div class="row">
+            <div class="col-sm-6">
+                <label>Password <span class="color-red">*</span></label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+            <div class="col-sm-6">
+                <label>Confirm Password <span class="color-red">*</span></label>
+                <input type="password" name="confirm_password" class="form-control" required>
+            </div>
+        </div>
+    
+        <div class="alert alert-success successBox" style="display: none;">
+            <button type="button" class="close" onclick="document.querySelector('.successBox').style.display='none';">×</button>
+            <strong style="font-size: 16px;">Congratulations!</strong> You have successfully registered.
+        </div>
+    
+        <hr>
+    
+        <div class="row">
+            <div class="col-lg-6 checkbox">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the <a href="#" class="color-green">Terms and Conditions</a>
+                </label>
+            </div>
+            <div class="col-lg-6 text-right">
+                <button class="btn-u" type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+    
+    <!-- End Registration Form -->
+
+    <!--=== Footer ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" alt=""></a>
+                        <p>At SGRR Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually exclusive when it comes to healthcare delivery.</p>
+                        <p>Our mission is to deliver high-quality, affordable healthcare services to the broader population in India.</p>
+                    </div>
+
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled useful-links">
+                            <li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+                            <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+                            <li><a href="appointment.html"><i class="fa fa-angle-right"></i> Book Appointment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="headline"><h2>Contact Us</h2></div>
+                        <address>
+                            SGRR Hospital <br />
+                            Dehradun, IN <br />
+                            Phone: 9997711455 <br />
+                            Email: sgrr@gmail.com
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End Footer ===-->
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+/* === Appointment Page Content Styling === */
+.container.content {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 300px);
+}
+
+/* Headline Styling */
+.headline h1 {
+    color: #b30000;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+
+.headline h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #b30000;
+}
+
+/* Appointment Form Styling */
+.sky-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.sky-form fieldset {
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.sky-form .label {
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 15px;
+}
+
+/* Inputs and Select Fields */
+.sky-form .input,
+.sky-form .select {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sky-form .input i,
+.sky-form .select i {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: #b30000;
+    font-size: 16px;
+}
+
+.sky-form input,
+.sky-form select {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.sky-form select {
+    padding-left: 10px;
+}
+
+.sky-form input:focus,
+.sky-form select:focus {
+    border-color: #b30000;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* Success Message */
+.successBox {
+    display: none;
+    background: #dff0d8;
+    border: 1px solid #d0e9c6;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.successBox .close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Appointment Button */
+.sky-form .btn-u {
+    background: #b30000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+}
+
+.sky-form .btn-u:hover {
+    background: #990000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .container.content {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .headline h1 {
+        font-size: 24px;
+    }
+    
+    .sky-form {
+        padding: 20px;
+    }
+    
+    .sky-form input,
+    .sky-form select {
+        padding: 10px 15px;
+    }
+    
+    .sky-form .input i,
+    .sky-form .select i {
+        font-size: 14px;
+        top: 10px;
+    }
+}
+
+
+.headline {
+    margin: 2px auto;  /* Adds space around and centers horizontally */
+    width: fit-content; /* Shrinks to the content size */
+}

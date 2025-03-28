@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test document</title>
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/line-icons-pro/styles.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+
+    <!-- Form and Address Container -->
+    <div class="headline">
+        <h1>Appointment Form</h1>
+    </div>
+    <div class="form-container">
+        
+        <!-- Form Wrapper -->
+        <div class="form-wrapper">
+            <!--=== CONSULTATION FORM ===-->
+            <form action="appointment_process.php" method="post" class="sky-form sky-changes-3">
+                <fieldset>
+                    <div class="row">
+                        <section class="col col-6">
+                            <label class="label">Full Name</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-user"></i>
+                                <input type="text" name="fullname" id="fullname" required>
+                            </label>
+                        </section>
+                        <section class="col col-6">
+                            <label class="label">E-mail Address</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-envelope-o"></i>
+                                <input type="email" name="email" id="email" required>
+                            </label>
+                        </section>
+                    </div>
+            
+                    <section>
+                        <label class="label">Reason for Consultation</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-file-text"></i>
+                            <input type="text" name="reason" required>
+                        </label>
+                    </section>
+            
+                    <section>
+                        <label class="label">Phone Number</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-phone"></i>
+                            <input type="text" name="phone" id="phone" required>
+                        </label>
+                    </section>  
+            
+                    <section>
+                        <label class="select">
+                            <select name="specialist" required>
+                                <option value="" selected disabled>Select Specialist</option>
+                                <option>Orthopedic</option>
+                                <option>Pediatrics</option>
+                                <option>Psychiatry</option>
+                                <option>Oncology</option>
+                                <option>Gastroenterology</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+            
+                    <div class="row">
+                        <section class="col col-6">
+                            <label class="label">Preferred Date</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-calendar"></i>
+                                <input type="date" name="preferred_date" required>
+                            </label>
+                        </section>
+                        <section class="col col-6">
+                            <label class="label">Preferred Time</label>
+                            <label class="select">
+                                <select name="preferred_time" required> <!-- FIXED -->
+                                    <option value="" selected disabled>Select Time Slot</option>
+                                    <option>9 AM - 11 AM</option>
+                                    <option>11 AM - 1 PM</option>
+                                    <option>1 PM - 3 PM</option>
+                                    <option>3 PM - 5 PM</option>
+                                    <option>5 PM - 7 PM</option>
+                                </select>
+                                <i></i>
+                            </label>
+                        </section>
+                    </div>
+            
+                    <section>
+                        <label class="label">Additional Notes</label>
+                        <label class="textarea">
+                            <i class="icon-append fa fa-comment"></i>
+                            <textarea rows="3" name="notes"></textarea>
+                        </label>
+                    </section>
+            
+                    <div class="alert alert-success successBox">
+                        <button type="button" class="close" onclick="showMsg(1);">×</button>
+                        <strong style="font-size: 16px;">Congratulations!</strong> <span class="alert-link">Your Consultation has been scheduled successfully.</span>
+                    </div>
+                </fieldset>
+            
+                <footer>
+                    <button type="submit" class="btn-u">Book Consultation</button>
+                </footer>
+            </form>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>

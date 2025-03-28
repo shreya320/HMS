@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SGRR Hospital | Contact</title>
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/line-icons-pro/styles.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    
+    <style>
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 0 15px;
+        }
+        .form-wrapper {
+            flex: 0 0 65%;
+            max-width: 65%;
+        }
+        .address-wrapper {
+            flex: 0 0 30%;
+            max-width: 30%;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .form-wrapper, .address-wrapper {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .address-wrapper {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--=== Header v1 ===-->
+    <div class="header-v1">
+        <!-- Topbar -->
+        <div class="topbar-v1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline top-v1-contacts">
+                            <li>
+                                <i class="fa fa-envelope"></i> Email: sgrrhms@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i> Contact no : 6396276055
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="res-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="download.png" height=50px; width=50px; alt="Logo">
+                        </a>
+                    </div>
+                </div><!--/end responsive container-->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <div class="res-container">
+                        <ul class="nav navbar-nav">
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+                            <!-- Home  -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="index.html">
+                                    HOME
+                                </a>
+
+                            </li>
+                            <!-- End Home-->
+
+                            <!-- About Us -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="about.html">
+                                    ABOUT US
+                                </a>
+                            </li>
+                            <!-- End About us -->
+
+                            <!-- Doctors -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="doctors.html">
+                                    DOCTORS
+                                </a>
+
+                            </li>
+                            <!-- End Doctors -->
+
+
+                            <!-- Contact Us -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="contact.html">
+                                    CONTACT US
+                                </a>
+                            </li>
+                            <!-- End Contact us -->
+
+                            <!-- Registration -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="registration.html">
+                                    REGISTRATION
+                                </a>
+                            </li>
+                            <!-- End registration -->
+
+                            <!-- login -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="login.html">
+                                    LOGIN
+                                </a>
+                            </li>
+                            <!-- End login -->
+
+                            <!-- Appointment -->
+                            <li class="mega-menu-fullwidth">
+                                <a href="appointment.html">
+                                    BOOK APPOINTMENT
+                                </a>
+
+                            </li>
+                            <!-- End Appointment -->
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+   <!-- Form and Address Container -->
+   <div class="headline">
+    <h1>Appointment Form</h1>
+</div>
+<div class="form-container">
+    
+    <!-- Form Wrapper -->
+    <div class="form-wrapper">
+        <!--=== CONSULTATION FORM ===-->
+        <form action="appointment_process.php" method="POST" class="sky-form sky-changes-3">
+            <fieldset>
+                <div class="row">
+                    <section class="col col-6">
+                        <label class="label">Full Name</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-user"></i>
+                            <input type="text" name="fullname" id="fullname" required>
+                        </label>
+                    </section>
+                    <section class="col col-6">
+                        <label class="label">E-mail Address</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope-o"></i>
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                    </section>
+                </div>
+        
+                <section>
+                    <label class="label">Reason for Consultation</label>
+                    <label class="input">
+                        <i class="icon-append fa fa-file-text"></i>
+                        <input type="text" name="reason" required>
+                    </label>
+                </section>
+        
+                <section>
+                    <label class="label">Phone Number</label>
+                    <label class="input">
+                        <i class="icon-append fa fa-phone"></i>
+                        <input type="text" name="phone" id="phone" required>
+                    </label>
+                </section>  
+        
+                <section>
+                    <label class="select">
+                        <select name="specialist" required>
+                            <option value="" selected disabled>Select Specialist</option>
+                            <option>Orthopedic</option>
+                            <option>Pediatrics</option>
+                            <option>Psychiatry</option>
+                            <option>Oncology</option>
+                            <option>Gastroenterology</option>
+                        </select>
+                        <i></i>
+                    </label>
+                </section>
+        
+                <div class="row">
+                    <section class="col col-6">
+                        <label class="label">Preferred Date</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input type="date" name="preferred_date" required>
+                        </label>
+                    </section>
+                    <section class="col col-6">
+                        <label class="label">Preferred Time</label>
+                        <label class="select">
+                            <select name="preferred_time" required> <!-- FIXED -->
+                                <option value="" selected disabled>Select Time Slot</option>
+                                <option>9 AM - 11 AM</option>
+                                <option>11 AM - 1 PM</option>
+                                <option>1 PM - 3 PM</option>
+                                <option>3 PM - 5 PM</option>
+                                <option>5 PM - 7 PM</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                </div>
+        
+                <section>
+                    <label class="label">Additional Notes</label>
+                    <label class="textarea">
+                        <i class="icon-append fa fa-comment"></i>
+                        <textarea rows="3" name="notes"></textarea>
+                    </label>
+                </section>
+        
+                <div class="alert alert-success successBox">
+                    <button type="button" class="close" onclick="showMsg(1);">×</button>
+                    <strong style="font-size: 16px;">Congratulations!</strong> <span class="alert-link">Your Consultation has been scheduled successfully.</span>
+                </div>
+            </fieldset>
+        
+            <footer>
+                <button type="submit" class="btn-u">Book Consultation</button>
+            </footer>
+        </form>
+        
+    </div>
+
+</div>
+
+        <!-- Address Wrapper -->
+        <div class="address-wrapper">
+            <div class="headline">
+                <h2>Address</h2>
+            </div>
+            <ul class="list-unstyled">
+                <li><i class="fa fa-home"></i> Dehradun, IN.</li>
+                <li><i class="fa fa-envelope"></i> sgrrhospital@gmail.com</li>
+                <li><i class="fa fa-phone"></i> 886 666 00555</li>
+                <li><i class="fa fa-globe"></i> http://www.sgrrhospital.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=== Footer ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="index.html"><img id="logo-footer" class="footer-logo"
+                                 alt=""></a>
+                        <p>At SGRR Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually
+                            exclusive when it comes to healthcare delivery.</p>
+                        <p>Our mission is to deliver high quality, affordable healthcare services to the broader
+                            population in India.</p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Useful Links Section -->
+                    <div class="col-md-3 md-margin">
+                        <div class="headline">
+                            <h2 style="color: white">Useful Links</h2>
+                        </div>
+                        <ul class="list-unstyled useful-links">
+                            <li>
+                                <a href="about.html">
+                                    <i class="fa fa-angle-right"></i> About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <i class="fa fa-angle-right"></i> Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="appointment.html">
+                                    <i class="fa fa-angle-right"></i> Book Appointment
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img" style="margin-bottom: 40px;">
+                        <div class="headline">
+                            <h2 style="color: white">Contact Us</h2>
+                        </div>
+                        <address class="md-margin-bottom-40">
+                            SGRR Hospital <br />
+                            Dehradun, IN <br />
+                            Phone: 9997711455 <br />
+                            Email: sgrr@gmail.com
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        <!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <!-- Copyright Section -->
+                    <div class="col-md-6 copyright-text">
+                        <p class="mb-0">
+                            &copy; <span class="current-year">2020</span> SGRR Hospital. All Rights Reserved.
+                            <span class="divider">|</span>
+                            <a href="privacy.html" class="policy-link">Privacy Policy</a>
+                            <span class="divider">|</span>
+                            <a href="terms.html" class="policy-link">Terms of Service</a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="http://www.facebook.com" class="tooltips" data-toggle="tooltip"
+                                    data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.skype.com" class="tooltips" data-toggle="tooltip"
+                                    data-placement="top" title="" data-original-title="Skype">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="http://www.linkedin.com" class="tooltips" data-toggle="tooltip"
+                                    data-placement="top" title="" data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer ===-->
+</body>
+</html>
